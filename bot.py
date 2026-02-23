@@ -6,6 +6,19 @@ from datetime import datetime
 import os
 print("TOKEN:", os.getenv("TOKEN"))
 
+import os
+import discord
+
+TOKEN = os.getenv("TOKEN")
+print("TOKEN:", TOKEN)  # nur zum testen
+
+client = discord.Client(intents=discord.Intents.default())
+
+@client.event
+async def on_ready():
+    print("Bot ist online!")
+
+client.run(TOKEN)
 
 
 TOKEN = ""
