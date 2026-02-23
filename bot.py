@@ -3,6 +3,11 @@ from discord.ext import commands, tasks
 import json, os
 from datetime import datetime
 
+import os
+print("TOKEN:", os.getenv("TOKEN"))
+
+
+
 TOKEN = ""
 
 PANEL_CHANNEL = "📉┃fahrzeug-leaderboard"
